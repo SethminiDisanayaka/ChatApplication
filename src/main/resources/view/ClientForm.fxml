@@ -16,7 +16,7 @@
    <children>
       <AnchorPane layoutY="-2.0" prefHeight="62.0" prefWidth="461.0" style="-fx-background-color: #c2bba9;">
          <children>
-            <Label layoutX="186.0" layoutY="21.0" text="SETHMINI">
+            <Label fx:id="lblName" layoutX="186.0" layoutY="21.0" text="SETHMINI">
                <font>
                   <Font size="14.0" />
                </font>
@@ -28,9 +28,9 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <ScrollPane layoutX="21.0" layoutY="82.0" prefHeight="475.0" prefWidth="420.0">
+      <ScrollPane fx:id="ScrollPane" layoutX="21.0" layoutY="82.0" prefHeight="475.0" prefWidth="420.0">
          <content>
-            <VBox prefHeight="474.0" prefWidth="418.0" />
+            <VBox onMouseClicked="#Mouse_On_Click_Hide_Emogi" prefHeight="474.0" prefWidth="418.0" />
          </content>
       </ScrollPane>
       <TextField fx:id="txtMessage" layoutX="48.0" layoutY="586.0" onAction="#msgOnAction" onMouseClicked="#Mouse_On_Click_Hide_Emogi" prefHeight="26.0" prefWidth="306.0" promptText="Message" />
@@ -49,7 +49,7 @@
             <Image url="@../img/icons8-smile-48.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="166.0" layoutY="449.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b6d6bf; -fx-background-radius: 20;">
+      <AnchorPane fx:id="EmojiPane" layoutX="166.0" layoutY="449.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b6d6bf; -fx-background-radius: 20;">
          <children>
             <GridPane prefHeight="200.0" prefWidth="200.0">
               <columnConstraints>
@@ -64,62 +64,62 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji1" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/icons8-grinning-face-with-sweat-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji8" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../img/icons8-disappointed-face-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji7" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../img/icons8-face-with-tongue-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                      <image>
                         <Image url="@../img/icons8-face-with-steam-from-nose-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                      <image>
                         <Image url="@../img/icons8-face-with-hand-over-mouth-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji10" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
                      <image>
                         <Image url="@../img/icons8-smileys-48%20(1).png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../img/icons8-face-screaming-in-fear-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji11" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <image>
                         <Image url="@../img/icons8-smileys-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji12" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <image>
                         <Image url="@../img/icons8-face-savoring-food-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji4" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                      <image>
                         <Image url="@../img/icons8-face-with-head-bandage-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji5" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <image>
                         <Image url="@../img/icons8-puzzled-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji6" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <image>
                         <Image url="@../img/icons8-face-with-monocle-48.png" />
                      </image>
