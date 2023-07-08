@@ -41,6 +41,9 @@ public class ClientController extends Thread {
     private FileChooser fileChooser;
     private File filePath;
 
+    public ClientController() {
+    }
+
     public void initialize(){
     String name = LoginController.username;
     lblName.setText(name);

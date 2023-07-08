@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="LoginPane" prefHeight="283.0" prefWidth="422.0" style="-fx-background-color: #c489c1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="154.0" layoutY="23.0" text="LET'S CHAT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="103.0" text="ENTER YOUR NAME" />
+      <TextField fx:id="txtname" layoutX="177.0" layoutY="99.0" onAction="#NameOnAction" promptText="Name" style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>
