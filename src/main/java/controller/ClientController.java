@@ -28,12 +28,21 @@ import java.net.Socket;
 
 public class ClientController extends Thread {
 
+
+    public javafx.scene.layout.VBox msgVbox;
+
+    @FXML
     private AnchorPane ClientPane;
+    @FXML
     private AnchorPane EmojiPane;
     public ScrollPane ScrollPane;
+    @FXML
     private Label lblName;
+    @FXML
     private TextField txtMessage;
-    public javafx.scene.layout.VBox VBox;
+//    public javafx.scene.layout.VBox VBox;
+
+
 
     BufferedReader reader;
     PrintWriter writer;
@@ -47,6 +56,8 @@ public class ClientController extends Thread {
     public void initialize(){
     String name = LoginController.username;
     lblName.setText(name);
+
+    //msgVbox.getChildren().add(new Label("test"));
 
         try{
             socket= new Socket("localhost",4500);
@@ -111,7 +122,7 @@ public class ClientController extends Thread {
 
                     if (!cmd.equalsIgnoreCase(lblName.getText())) {
 
-                        VBox.setAlignment(Pos.TOP_LEFT);
+                        msgVbox.setAlignment(Pos.TOP_LEFT);
                         hBox.setAlignment(Pos.CENTER_LEFT);
 
 
@@ -127,7 +138,7 @@ public class ClientController extends Thread {
 
                     }
 
-                    Platform.runLater(() -> VBox.getChildren().addAll(hBox));
+                    Platform.runLater(() -> msgVbox.getChildren().addAll(hBox));
 
 
                 } else {
@@ -158,7 +169,7 @@ public class ClientController extends Thread {
                     if (!cmd.equalsIgnoreCase(lblName.getText() + ":")) {
 
 
-                        VBox.setAlignment(Pos.TOP_LEFT);
+                        msgVbox.setAlignment(Pos.TOP_LEFT);
                         hBox.setAlignment(Pos.CENTER_LEFT);
                         hBox.getChildren().add(flow);
 
@@ -176,7 +187,7 @@ public class ClientController extends Thread {
                         flow2.setPadding(new Insets(3,10,3,10));
                     }
 
-                    Platform.runLater(() -> VBox.getChildren().addAll(hBox));
+                    Platform.runLater(() -> msgVbox.getChildren().addAll(hBox));
                 }
             }
 
