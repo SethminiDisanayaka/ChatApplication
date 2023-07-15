@@ -17,6 +17,7 @@ public class LoginController {
     static String username;
 
     @FXML
+
     void NameOnAction(ActionEvent event) throws IOException {
         username=txtname.getText();
         txtname.clear();

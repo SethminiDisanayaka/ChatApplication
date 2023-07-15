@@ -32,8 +32,6 @@ public class ClientController extends Thread {
     public javafx.scene.layout.VBox msgVbox;
 
     @FXML
-    private AnchorPane ClientPane;
-    @FXML
     private AnchorPane EmojiPane;
     public ScrollPane ScrollPane;
     @FXML
@@ -230,28 +228,28 @@ public class ClientController extends Thread {
 
     @FXML
     void emoji1(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(128514));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     @FXML
     void emoji10(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(128514));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     @FXML
     void emoji11(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(128525));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     @FXML
     void emoji12(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(128523));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
@@ -265,14 +263,14 @@ public class ClientController extends Thread {
 
     @FXML
     void emoji3(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(128548));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     @FXML
     void emoji4(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(129301));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
@@ -293,21 +291,21 @@ public class ClientController extends Thread {
 
     @FXML
     void emoji7(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(129296));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     @FXML
     void emoji8(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(128572));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     @FXML
     void emoji9(MouseEvent event) {
-        String emoji = new String(Character.toChars(128546));
+        String emoji = new String(Character.toChars(128561));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
