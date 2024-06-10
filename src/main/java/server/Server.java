@@ -27,3 +27,10 @@ public class Server {
         }
     }
 }
+//Stub eka kiyanne clientge peththe get way eka eken thamai server ekata request yawanne
+//object ekak byte stream karanawa serializable
+
+//Skeleton eken karanne clientgen ena request saha server eken ena response meda idangena handle karanawa
+//byte stream ekak object ekak karanawa unserializable
+
+//Buffer reader eken karanne upload karana data server ekata danawa

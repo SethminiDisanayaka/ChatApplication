@@ -38,7 +38,6 @@ public class ClientController extends Thread {
     private Label lblName;
     @FXML
     private TextField txtMessage;
-//    public javafx.scene.layout.VBox VBox;
 
 
 

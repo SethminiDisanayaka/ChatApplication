@@ -101,12 +101,12 @@
                   </ImageView>
                   <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji11" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <image>
-                        <Image url="@../img/icons8-smileys-48.png" />
+                        <Image url="@/img/icons8-smileys-48.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji12" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <image>
-                        <Image url="@../img/icons8-face-savoring-food-48.png" />
+                        <Image url="@/img/icons8-face-savoring-food-48.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="48.0" fitWidth="53.0" onMouseClicked="#emoji4" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
